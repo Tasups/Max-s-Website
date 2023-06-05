@@ -1,0 +1,19 @@
+{
+  "name": "environment",
+  "version": "1.0.0",
+  "description": "Max's Craft Webiste",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tasups/Max-s-Website.git"
+  },
+  "author": "Jason Whisnant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tasups/Max-s-Website/issues"
+  },
+  "homepage": "https://github.com/Tasups/Max-s-Website#readme"
+}
