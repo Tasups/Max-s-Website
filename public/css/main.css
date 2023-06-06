@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
+
 * {
   box-sizing: border-box;
 }
@@ -11,7 +12,8 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Play', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .centered {
@@ -73,12 +75,12 @@ body {
 
 .banner__title {
   margin: 0;
-  padding: 0;
+  padding: 2rem 0 0 0;
 }
 
 .banner__img {
     max-width: 90%;
-    max-height: 90%;
+    max-height: 80vh;
     padding: 4rem 1rem;
 }
 
@@ -88,7 +90,7 @@ body {
 }
 
 .banner__description {
-  padding: 0 1rem 6rem 1rem;
+  padding: 0 2rem 6rem 2rem;
 }
 
 .banner__description h3 {
@@ -213,13 +215,17 @@ body {
   text-align: center;
 }
 
+.gallery-item img {
+  max-width: 40rem;
+}
+
 .calendar__container {
-  height: 100vh;
   background-color: #F5F5F5;
 }
 
 .calendar__list {
   padding: 1rem;
+  margin: 0;
 }
 
 .calendar__container-title {
