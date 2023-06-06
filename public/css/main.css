@@ -4,12 +4,17 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
 
+/*facebook grey: #898F9C*/
 
 .centered {
     text-align: center;
@@ -17,11 +22,13 @@ body {
 
 .main-header {
   width: 100%;
-  height: 3.5rem;
+  height: 4rem;
   background-color: #a82dff;
   padding: 0 1.5rem;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
 }
 
 .main-header__nav {
@@ -54,21 +61,20 @@ body {
   color: #ffd52d;
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .banner {
-  padding-top: 60px;
+.banner {
+  background-color: #F5F5F5;
+  height: 100vh;
+  margin-top: 4rem;
 }
 
 .banner__img {
     max-width: 50%;
     max-height: 80%;
+    padding-top: 2rem;
+}
+
+.banner h1 {
+  color: black;
 }
 
 .mobile-nav {
@@ -137,10 +143,6 @@ body {
   border-color: #ffeb3b;
 }
 
-.banner__img {
-    width: 100%;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -157,6 +159,35 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: stretch;
+}
+
+.gallery__container {
+  background-color: #D8AAF8;
+  height: 100vh;
+}
+
+.gallery-item__list {
+  margin: 0;
+}
+
+.calendar__container {
+  height: 100vh;
+}
+
+.footer {
+  height: 10rem;
+  background-color: #a82dff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.footer__contact-icons {
+  margin: 1rem 0;
+  width: 100%;
+  height: 4rem;
 }
 
 @media (min-width: 768px) {

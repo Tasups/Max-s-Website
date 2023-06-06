@@ -3,85 +3,83 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>Max's Craft Website</title>
+        <script src="https://kit.fontawesome.com/ac1ed33404.js" crossorigin="anonymous"></script>
+        <script src="../public/js/main.js"></script>
         <link rel="stylesheet" href="../public/css/main.css" type="text/css" media="all" />
+        
     </head>
     <body>
         <div class="backdrop"></div>
+        <!--Non-mobile Nav-->
         <header class="main-header">
             <button id="side-menu-toggle">Menu</button>
             <nav class="main-header__nav">
                 <ul class="main-header__item-list">
                     <li class="main-header__item">
-                        <a href="#">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li class="main-header__item">
-                        <a href="#">Crafts</a>
+                        <a href="#gallery">Crafts</a>
                     </li>
                     <li class="main-header__item">
-                        <a href="#">Calendar</a>
+                        <a href="#calendar">Calendar</a>
                     </li>
                     <li class="main-header__item">
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        
+        <!--Mobile Nav-->
         <nav class="mobile-nav">
             <ul class="mobile-nav__item-list">
                 <li class="mobile-nav__item">
-                    <a href="#">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li class="mobile-nav__item">
-                    <a href="#">Crafts</a>
+                    <a href="#gallery">Crafts</a>
                 </li>
                 <li class="mobile-nav__item">
-                    <a href="#">Calendar</a>
+                    <a href="#calendar">Calendar</a>
                 </li>
                 <li class="mobile-nav__item">
-                    <a href="#">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
         <main>
-            <section class="banner centered">
+            <!--Banner Introduction-->
+            <section class="banner centered" id="home">
                 <img class="banner__img" src="https://github.com/Tasups/images/blob/main/MAX%20Main.jpg?raw=true" alt="banner" />
+                <h1>Max's Crafts</h1>
             </section>
-            <section class="gallery__container">
+            <!--Item Gallery-->
+            <section class="gallery__container" id="gallery">
                 <ul class="gallery-item__list">
                     <li class="gallery-item">
                         <img src=""></img>
                     </li>
                 </ul>
-            </section>            
-            <section class="">
-                THIS IS WHERE THE COMMUNITY WILL GO
+            </section>  
+            <!--Calendar-->
+            <section class="calendar__container" id="calendar">
+                THIS IS WHERE THE CALENDAR WILL GO
             </section>
+            
         </main>
-        <footer class="">
-            
- 
+        
+        <footer class="footer centered" id="contact">
+            <i class="fa-brands fa-facebook"></i>
+            <section class="footer__contact-icons">
+                THIS IS WHERE THE ICONS GO
+                <!--fontawesome icon not working-->
+                <i class="fa-brands fa-facebook"></i>
+            </section>
+            <section class="footer__publisher">
+                &copy2023 Jason Whisnant
+            </section>
         </footer>
-        <script src="../public/js/main.js">
-        </script>
-        <script>
-            // When the user scrolls the page, execute myFunction
-            window.onscroll = function() {myFunction()};
-            
-            // Get the navbar
-            var navbar = document.getElementById("main-header__nav");
-            
-            // Get the offset position of the navbar
-            var sticky = navbar.offsetTop;
-            
-            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-            function myFunction() {
-              if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-              } else {
-                navbar.classList.remove("sticky");
-              }
-            }
-        </script>
+        
+       
     </body>
 </html>
