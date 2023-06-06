@@ -4,7 +4,6 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>Max's Craft Website</title>
         <script src="https://kit.fontawesome.com/ac1ed33404.js" crossorigin="anonymous"></script>
-        <script src="../public/js/main.js"></script>
         <link rel="stylesheet" href="../public/css/main.css" type="text/css" media="all" />
         
     </head>
@@ -48,22 +47,60 @@
             </ul>
         </nav>
         <main>
+            
+            <!--Home nav hook-->
+            <div class="home__location" id="home"></div>
+            
             <!--Banner Introduction-->
-            <section class="banner centered" id="home">
+            <section class="banner centered">
+                <h1 class="banner__title">Max's Crafts</h1>
                 <img class="banner__img" src="https://github.com/Tasups/images/blob/main/MAX%20Main.jpg?raw=true" alt="banner" />
-                <h1>Max's Crafts</h1>
+                
+                <!--Who am I article-->
+                <article class="banner__description">
+                    <h2 class="banner__description-title">What I do / Who I am</h2>
+                    <h3>My name is Max and I love to work with glass to make lawns and other landscapes a wonder to behold</h3>
+                </article>
+                
             </section>
+            
             <!--Item Gallery-->
             <section class="gallery__container" id="gallery">
+                <h1 class="gallery__container-title">GALLERY</h1>
                 <ul class="gallery-item__list">
                     <li class="gallery-item">
-                        <img src=""></img>
+                        <h2>Dark Tides</h2>
+                        <img src="https://github.com/Tasups/images/blob/main/PG-Dark%20Tides.jpg?raw=true" alt="Dark Tides novel"></img>
+                    </li>
+                    <li class="gallery-item">
+                        <h2>Dawnlands</h2>
+                        <img src="https://github.com/Tasups/images/blob/main/PG-Dawnlands.jpg?raw=true" alt="Dawnlands novel"></img>
+                    </li>
+                    <li class="gallery-item">
+                        <h2>Tidelands</h2>
+                        <img src="https://github.com/Tasups/images/blob/main/PG-Tidelands.jpg?raw=true" alt="Tidelands novel"></img>
                     </li>
                 </ul>
             </section>  
+            
             <!--Calendar-->
-            <section class="calendar__container" id="calendar">
-                THIS IS WHERE THE CALENDAR WILL GO
+            <section class="calendar__container centered" id="calendar">
+                <h1 class="calendar__container-title">CALENDAR</h1>
+                <ul class="calendar__list">
+                    <li class="calendar__list-item">
+                        <h2>January 10th, 2023 - LEAF Festival - Black Mountain, NC</h2>
+                    </li>
+                </ul>
+                <ul class="calendar__list">
+                    <li class="calendar__list-item">
+                        <h2>January 10th, 2023 - LEAF Festival - Black Mountain, NC</h2>
+                    </li>
+                </ul>
+                <ul class="calendar__list">
+                    <li class="calendar__list-item">
+                        <h2>January 10th, 2023 - LEAF Festival - Black Mountain, NC</h2>
+                    </li>
+                </ul>
             </section>
             
         </main>
@@ -80,6 +117,6 @@
             </section>
         </footer>
         
-       
+        <script src="../public/js/main.js"></script>
     </body>
 </html>

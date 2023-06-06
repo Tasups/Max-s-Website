@@ -14,10 +14,15 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/*facebook grey: #898F9C*/
-
 .centered {
-    text-align: center;
+  text-align: center;
+}
+
+.home__location {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  position: absolute;
 }
 
 .main-header {
@@ -63,18 +68,31 @@ body {
 
 .banner {
   background-color: #F5F5F5;
-  height: 100vh;
   margin-top: 4rem;
 }
 
+.banner__title {
+  margin: 0;
+  padding: 0;
+}
+
 .banner__img {
-    max-width: 50%;
-    max-height: 80%;
-    padding-top: 2rem;
+    max-width: 90%;
+    max-height: 90%;
+    padding: 4rem 1rem;
 }
 
 .banner h1 {
   color: black;
+  font-size: 4rem;
+}
+
+.banner__description {
+  padding: 0 1rem 6rem 1rem;
+}
+
+.banner__description h3 {
+  margin: 0;
 }
 
 .mobile-nav {
@@ -163,15 +181,57 @@ body {
 
 .gallery__container {
   background-color: #D8AAF8;
-  height: 100vh;
+}
+
+.gallery__container-title {
+  margin: 0;
+  padding: 4rem 0 0 0;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 .gallery-item__list {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
   margin: 0;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.gallery-item {
+  background-color: #F5F5F5;
+  padding: 1rem;
+  list-style-type: none;
+  margin: 1rem;
+  border: solid 0.25rem #F5F5F5;
+  border-radius: 0.5rem;
+}
+
+.gallery-item h2 {
+  text-align: center;
 }
 
 .calendar__container {
   height: 100vh;
+  background-color: #F5F5F5;
+}
+
+.calendar__list {
+  padding: 1rem;
+}
+
+.calendar__container-title {
+  margin: 0;
+  padding: 4rem 0 0 0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.calendar__list-item {
+  list-style-type: none;
+  padding: 0;
 }
 
 .footer {
@@ -190,7 +250,8 @@ body {
   height: 4rem;
 }
 
-@media (min-width: 768px) {
+
+@media only screen and (min-width: 768px) {
   .main-header__nav {
     display: flex;
   }
