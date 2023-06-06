@@ -104,7 +104,7 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  background: white;
+  background: #a82dff;
   z-index: 10;
   padding: 2rem 1rem 1rem 2rem;
   transform: translateX(-100%);
@@ -126,6 +126,7 @@ body {
 .mobile-nav__item {
   margin: 1rem;
   padding: 0;
+  background-color: #a82dff;
 }
 
 .mobile-nav__item a {
@@ -138,7 +139,7 @@ body {
 .mobile-nav__item a:active,
 .mobile-nav__item a:hover,
 .mobile-nav__item a.active {
-  background:  #a82dff;
+  background: #a82dff;
   color: white;
   border-radius: 3px;
 }
