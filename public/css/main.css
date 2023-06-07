@@ -95,15 +95,22 @@ body {
 
 .banner__description {
   padding: 0 2rem 6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .banner__description-title {
-  font-size: 2rem;
+  font-size: 4rem;
+  font-family: 'Indie Flower', cursive;
 }
 
-.banner__description h3 {
+.banner__description p {
   margin: 0;
   font-size: 1.5rem;
+  max-width: 55rem;
 }
 
 .mobile-nav {
@@ -215,9 +222,9 @@ body {
 
 .gallery-item {
   background-color: #F5F5F5;
-  padding: 1rem;
+  padding: 2rem;
   list-style-type: none;
-  margin: 1rem;
+  margin: 4rem 1rem;
   border: solid 0.25rem #F5F5F5;
   border-radius: 0.5rem;
 }
@@ -235,11 +242,23 @@ body {
 
 .calendar__container {
   background-color: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-bottom: 4rem;
 }
 
 .calendar__list {
   padding: 1rem;
   margin: 0;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .calendar__container-title {
@@ -252,11 +271,37 @@ body {
 
 .calendar__list-item {
   list-style-type: none;
-  padding: 0;
+  min-width: 45rem;
+  border: 3px solid #a82dff;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 0 1rem;
 }
 
 .calender__list-item h2 {
+  margin: 0 0 0 0 !important;
   font-size: 1.5rem;
+}
+
+.calendar__event-link {
+  background-color: #a82dff;
+  min-width: 20rem;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+.calendar__event-link:hover {
+  background-color: #D8AAF8;
+  color: #D8AAF8 !important;
+}
+
+.calendar__list-item a {
+  text-decoration: none;
 }
 
 .footer {
