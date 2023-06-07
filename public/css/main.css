@@ -198,8 +198,9 @@ body {
 .gallery__container-title {
   margin: 0;
   padding: 4rem 0 0 0;
-  font-size: 2.5rem;
+  font-size: 5rem;
   text-align: center;
+  font-family: 'Indie Flower', cursive;
 }
 
 .gallery-item__list {
@@ -244,8 +245,9 @@ body {
 .calendar__container-title {
   margin: 0;
   padding: 4rem 0 0 0;
-  font-size: 2.5rem;
+  font-size: 5rem;
   text-align: center;
+  font-family: 'Indie Flower', cursive;
 }
 
 .calendar__list-item {
