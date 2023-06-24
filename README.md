@@ -13,3 +13,9 @@ or visit https://docs.aws.amazon.com/console/cloud9/ for our documentation.
 
 Happy coding!
 # Max-s-Website
+
+Current Notes:
+
+06/12/23
+Currently having issues with the mobile nav button due to the html, body, and header__main showing itself to be 900px when the view size is actually much smaller, about 300px. 
+I've tried tweaking them but to no avail. Maybe shelf this until I get more information or requests to change it, seeing as this is a free website and I did it gratis.
